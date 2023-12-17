@@ -100,6 +100,7 @@ inputs = tokenizer(text, return_tensors="pt")
 outputs = model(**inputs) 
 
 prediction = argmax(outputs.logits)
+```
 
 For inference, the trained model was used to predict intents on a set of unlabeled test queries. Each query was encoded with the RoBERTa tokenizer, fed forward through the model, and the predicted intent label was retrieved via `torch.argmax` on the output.
 
