@@ -111,3 +111,5 @@ The intent predictions were written to a text file for analysis. This model coul
 ## Conclusion
 
 In this project, transfer learning via fine-tuning RoBERTa was highly effective for intent classification. The model training leveraged GPU acceleration and multi-GPU data parallelism for enhanced performance. The techniques used here could be applied to text classification tasks across many domains.
+
+[Hugging Face 🤗 Model LINK ] (https://huggingface.co/mofaruque/RoBERTa_base_inquiry_classification)
