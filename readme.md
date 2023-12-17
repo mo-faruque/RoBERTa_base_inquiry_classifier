@@ -1,6 +1,6 @@
 
 
-# Here is a draft detailed report on the runners up solution for the 2023 NMSU Data Mining Contest intent
+# Here is a detailed report on the runners up solution for the 2023 NMSU Data Mining Contest 
 
 ![NMSU Logo](NMSU_NoU-Crimson.png)
 
