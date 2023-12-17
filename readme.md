@@ -35,7 +35,7 @@ The training and validation data was loaded from a CSV file containing the queri
 
 ## Model Architecture
 
-The **Hugging Face Transformers** implementation of [RoBERTa](https://huggingface.co/roberta-base) was used from the `transformers` Python library  which has 125 million parameters. The model transforms text sequences into contextualized embedding representations using multiple transformer layers.
+The **Hugging Face** implementation of [RoBERTa](https://huggingface.co/roberta-base) was used from the `transformers` library. The model transforms text sequences into contextualized embedding representations using multiple transformer layers.
 
 For intent classification, a classification head was added on top consisting of:
 
@@ -55,7 +55,7 @@ The key training hyperparameters used were:
 
 The AdamW optimizer was used along with gradient norm clipping for stable optimization.
 
-Data parallelism via PyTorch's `DataParallel` module was used to train across two NVIDIA GPUs simultaneously. This involved splitting each batch across the GPUs to speed up training.
+Data parallelism via PyTorch's `DataParallel` module was used to train across two **NVIDIA RTX 3060 (12GB VRAM each)** GPUs simultaneously. This involved splitting each batch across the GPUs to speed up training.
 
 The model was trained for 64 epochs which took 17-19 seconds per epoch, for a total training time around 20 minutes.
 
