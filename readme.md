@@ -55,7 +55,7 @@ The key training hyperparameters used were:
 
 The AdamW optimizer was used along with gradient norm clipping for stable optimization.
 
-Data parallelism via PyTorch's `DataParallel` module was used to train across two **NVIDIA RTX 3060 (12GB VRAM each)** GPUs simultaneously. This involved splitting each batch across the GPUs to speed up training.
+Data parallelism via PyTorch's `DataParallel` module was used to train across two `NVIDIA RTX 3060 (12GB VRAM each)` GPUs simultaneously. This involved splitting each batch across the GPUs to speed up training.
 
 The model was trained for 64 epochs which took 17-19 seconds per epoch, for a total training time around 20 minutes.
 
@@ -63,7 +63,8 @@ The average training loss decreased from 5.005 after epoch 1 down to 0.025 after
 
 ## Results
 
-After fine-tuning RoBERTa for intent classification, the model achieved **100% accuracy** on the validation set. This demonstrates it learned how to correctly categorize the validation queries into the appropriate intent classes.
+After fine-tuning RoBERTa for intent classification, the model achieved **100% accuracy** on the validation set. The model achieved **96.6%** accuracy on the validation set. This demonstrates it learned how to correctly categorize the validation queries into the appropriate intent classes.
+
 
 # Saving and Loading the Trained Model
 
